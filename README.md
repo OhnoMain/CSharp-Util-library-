@@ -1,8 +1,8 @@
 **CONTENTS**
 <ol>
-Factorial (rnt int)
-Prime checker (rtn string)
-Even check (rtn string)
-Power (rtn int)
-Digit count (rtn int)
+Factorial (rnt int)<br>
+Prime checker (rtn string)<br>
+Even check (rtn string)<br>
+Power (rtn int)<br>
+Digit count (rtn int)<br>
 </ol>
