@@ -8,4 +8,4 @@
 </ol>
 
 <br>
-**❌NO CHATGPT❌**
+❌**NO CHATGPT**❌
