@@ -1,9 +1,5 @@
 <h1>C# Utility DLL Library</h1>
 
-<p>
-A C# library for commonly used functions
-</p>
-
 <h2>📦 Contents (more are coming)</h2>
 
 <ol>
@@ -16,7 +12,7 @@ A C# library for commonly used functions
 
 <br>
 
-<h2>⚙️ How to use</h2>
+<h2>How to use</h2>
 
 <pre>
 Numbers.Factorial(5);
