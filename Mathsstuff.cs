@@ -19,7 +19,7 @@ namespace MathUtils
         }
 
         
-        public static bool primeCheck(int n)
+        public static bool IsPrime(int n)
         {
             bool prime = false;
             double num2 = n - 1;
@@ -35,7 +35,7 @@ namespace MathUtils
             return prime;
         }
 
-        public static string EvenCheck(int n)
+        public static string IsEven(int n)
         {
             if (n%2 == 0)
             {
@@ -66,7 +66,7 @@ namespace MathUtils
             return final.Length;
         }
 
-        public static bool isDivisible(int n, int divisor)
+        public static bool IsDivisible(int n, int divisor)
         {
             bool divisible = false;
 
@@ -78,7 +78,7 @@ namespace MathUtils
             return divisible;
         }
 
-        public static double degsToRads(double degs)
+        public static double DegsToRads(double degs)
         {
             double rads = (degs/360)*2*(Math.PI);
 
@@ -90,7 +90,7 @@ namespace MathUtils
         {
             double sinx;
 
-            x = (MathsTools.degsToRads(x));
+            x = (MathsUtil.DegsToRads(x));
 
             sinx = x;
 
