@@ -1,8 +1,8 @@
 ﻿using System.Runtime.InteropServices.Marshalling;
 
-namespace MathUtils
+namespace MyUtils
 {
-    public class Numbers
+    public class MathsUtil
     {
         public static int Factorial(int n)
         {
@@ -17,24 +17,22 @@ namespace MathUtils
             }
             return total;
         }
-        public static string Prime(int n)
-        {
-            if (n <= 1)
-            {
-                return "The number is not a prime";
-            }
-            
-            for (int i = 2; i <= Math.Sqrt(n); i++)
-            {
-                if (n % i == 0)
-                {
-                    return "The number is NOT a prime";
-                    
-                }
-                
-            }
-            return "The number is a prime";
 
+        
+        public static bool primeCheck(int n)
+        {
+            bool prime = false;
+            double num2 = n - 1;
+
+            double numFact = MathsTools.factoral(num2);
+            double num3 = numFact + 1;
+
+            if (num3 % n == 0)
+            {
+                prime = true;
+            }
+
+            return prime;
         }
 
         public static string EvenCheck(int n)
@@ -65,6 +63,50 @@ namespace MathUtils
         {
             string final = Convert.ToString(n);
             return final.Length;
+        }
+
+        public static bool isDivisible(int n, int divisor)
+        {
+            bool divisible = false;
+
+            if (n %  divisor == 0)
+            {
+                divisible = true;
+            }
+
+            return divisible;
+        }
+
+        public static double degsToRads(double degs)
+        {
+            double rads = (degs/360)*2*(Math.PI);
+
+            return rads; 
+    
+        }
+
+        public static double DegSin(double x)
+        {
+            double sinx;
+
+            x = (MathsTools.degsToRads(x));
+
+            sinx = x;
+
+            for (int i = 3; i < 70; i += 4)
+            {
+                sinx -= ((MathsUtil.Power(x, i)) / (MathsUtil.Factorial(i)));
+                sinx += ((MathsUtil.Power(x, i + 2)) / (MathsUtil.Factorial(i + 2)));
+            }
+
+            return Math.Round(sinx, 3);
+    
+        }
+
+        public static double nCr(double n, double r)
+        {
+            double nCr = (MathsUtil.Factorail(n))/ ((MathsUtil.Factorial(n - r))*MathsUtil.Factorial(r));
+            return nCr;
         }
 
         /*public static int ReverseNumber(int n)
