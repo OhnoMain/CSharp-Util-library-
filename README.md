@@ -15,6 +15,8 @@
 <h2>How to use</h2>
 
 <pre>
+using MathUtils;
+    
 Numbers.Factorial(5);
 Numbers.IsPrime(7);
 Numbers.IsEven(10);
