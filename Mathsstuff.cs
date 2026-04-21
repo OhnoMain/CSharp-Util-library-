@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices.Marshalling;
 
-namespace MyUtils
+namespace MathUtils
 {
     public class MathsUtil
     {
