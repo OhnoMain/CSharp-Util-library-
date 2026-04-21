@@ -41,5 +41,6 @@ MathsUtil.DegSin(90);
 
 <p><b>This project IS and will remain 100% Ai free</b></p>
 <br>
+<h3>👇If you want to see anything else added or have any questions Dm me👇</h3>
 <h2>🟦 DISCORD</h2>
 <p>https://discord.com/users/1486806826946134239</p>
