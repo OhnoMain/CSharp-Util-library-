@@ -4,7 +4,7 @@ namespace MathUtils
 {
     public class MathsUtil
     {
-        public static int Factorial(int n)
+        public static double Factorial(int n)
         {
             if (n == 0)
             {
@@ -44,18 +44,19 @@ namespace MathUtils
             return "Number is odd";
         }
 
-        public static int Power(int baseNum, int exp)
+        public static double Power(int baseNum, int exp)
         {
-            int result = 1;
-            if (baseNum == 0)
-            {
-                return 0;
-            }
+            double result = baseNum;
 
-            for (int i = 0; i < exp; i++)
+            for (int i = 1; i < exp; i++)
             {
-                result *= baseNum;
+                result*= baseNum;
             }
+            if (exp == 0)
+            {
+                result = 1;
+            }
+             
             return result;
         }
 
@@ -105,7 +106,7 @@ namespace MathUtils
 
         public static double nCr(double n, double r)
         {
-            double nCr = (MathsUtil.Factorail(n))/ ((MathsUtil.Factorial(n - r))*MathsUtil.Factorial(r));
+            double nCr = (MathsUtil.Factorial(n))/ ((MathsUtil.Factorial(n - r))*MathsUtil.Factorial(r));
             return nCr;
         }
 
