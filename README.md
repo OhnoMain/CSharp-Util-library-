@@ -3,11 +3,14 @@
 <h2>📦 Contents (more are coming)</h2>
 
 <ol>
-    <li>Factorial (returns int)</li>
+    <li>Factorial (returns double)</li>
     <li>Prime Checker (returns bool)</li>
     <li>Even Number Check (returns bool)</li>
-    <li>Power Function (returns int)</li>
+    <li>Divisibility Checker (returns bool) </li>
+    <li>Power Function (returns double)</li>
     <li>Digit Count (returns int)</li>
+    <li>Degrees to Radians Converter (returns double)</li>
+    <li>Degrees Sine Function (returns double)</li>
 </ol>
 
 <br>
@@ -17,11 +20,14 @@
 <pre>
 using MathUtils;
     
-Numbers.Factorial(5);
-Numbers.IsPrime(7);
-Numbers.IsEven(10);
-Numbers.Power(2, 4);
-Numbers.DigitCount(12345);
+MathsUtil.Factorial(5);
+MathsUtil.IsPrime(7);
+MathsUtil.IsEven(10);
+MathsUtil.IsDivisible(15,3);
+MathsUtil.Power(2, 4);
+MathsUtil.DigitCount(12345);
+MathsUtil.DegsToRads(90);
+MathsUtil.DegSin(90);
 </pre>
 <br>
 <p>Add a reference for the dll file, "MathUtils.dll". Right-click on the project and then click on "Add reference"</p>
