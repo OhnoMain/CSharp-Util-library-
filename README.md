@@ -11,6 +11,7 @@
     <li>Digit Count (returns int)</li>
     <li>Degrees to Radians Converter (returns double)</li>
     <li>Degrees Sine Function (returns double)</li>
+    <li>Degrees Cosine Function (returns double)</li>
 </ol>
 
 <br>
@@ -26,8 +27,9 @@ MathsUtil.IsEven(10);
 MathsUtil.IsDivisible(15,3);
 MathsUtil.Power(2, 4);
 MathsUtil.DigitCount(12345);
-MathsUtil.DegsToRads(90);
+MathsUtil.DegsToRads(360);
 MathsUtil.DegSin(90);
+MathsUtil.DegCos(180);
 </pre>
 <br>
 <p>Add a reference for the dll file, "MathsUtil.dll". Right-click on the project and then click on "Add reference"</p>
