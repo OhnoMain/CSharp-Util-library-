@@ -24,7 +24,7 @@ namespace MathUtils
             bool prime = false;
             double num2 = n - 1;
 
-            double numFact = Factorial(Convert.ToInt32(num2));
+            double numFact = Factorial(num2);
             double num3 = numFact + 1;
 
             if (num3 % n == 0)
@@ -44,7 +44,7 @@ namespace MathUtils
             return "Number is odd";
         }
 
-        public static double Power(int baseNum, int exp)
+        public static double Power(double baseNum, int exp)
         {
             double result = baseNum;
 
@@ -96,17 +96,33 @@ namespace MathUtils
 
             for (int i = 3; i < 70; i += 4)
             {
-                sinx -= ((MathsUtil.Power(Convert.ToInt32(x), i)) / (MathsUtil.Factorial(i)));
-                sinx += ((MathsUtil.Power(Convert.ToInt32(x), i + 2)) / (MathsUtil.Factorial(i + 2)));
+                sinx -= ((MathsUtil.Power(x, i)) / (MathsUtil.Factorial(i)));
+                sinx += ((MathsUtil.Power(x, i + 2)) / (MathsUtil.Factorial(i + 2)));
             }
 
             return Math.Round(sinx, 3);
 
         }
 
+
+         public static double DegCos(double x)
+         {
+             double cosx = 0;
+             x = (MathsUtil.DegsToRads(x));
+
+             for (int i = 0; i < 70; i +=4)
+             {
+                 cosx += ((MathsUtil.Power(x, i)) / (MathsUtil.Factorial(i)));
+                 cosx -= ((MathsUtil.Power(x, i + 2)) / (MathsUtil.Factorial(i + 2)));
+
+             }
+
+             return Math.Round(cosx, 3);
+         }
+
         public static double nCr(double n, double r)
         {
-            double nCr = (MathsUtil.Factorial(Convert.ToInt32(n))) / ((MathsUtil.Factorial(Convert.ToInt32(n) - Convert.ToInt32(r))) * MathsUtil.Factorial(Convert.ToInt32(r)));
+            double nCr = (MathsUtil.Factorial(n)) / ((MathsUtil.Factorial(n) - (r) * MathsUtil.Factorial(r));
             return nCr;
         }
 
