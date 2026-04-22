@@ -18,7 +18,7 @@
 <h2>How to use</h2>
 
 <pre>
-using MathUtils;
+using MathsUtil;
     
 MathsUtil.Factorial(5);
 MathsUtil.IsPrime(7);
@@ -30,11 +30,11 @@ MathsUtil.DegsToRads(90);
 MathsUtil.DegSin(90);
 </pre>
 <br>
-<p>Add a reference for the dll file, "MathUtils.dll". Right-click on the project and then click on "Add reference"</p>
+<p>Add a reference for the dll file, "MathsUtil.dll". Right-click on the project and then click on "Add reference"</p>
 <img width="500" height="367" alt="image" src="https://github.com/user-attachments/assets/c9359043-7d61-40d0-afd2-4828c853619f" />
 <p>Select the DLL file and add it to the project</p>
 <img width="560" height="399" alt="image" src="https://github.com/user-attachments/assets/2af43492-43c3-4ba4-b0df-c1d1f6ea6933" />
-<p>Add the namespace ("using MathUtils;")</p>
+<p>Add the namespace ("using MathsUtil;")</p>
 <br>
 
 <h2>❌ NO AI ❌</h2>
