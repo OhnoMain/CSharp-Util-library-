@@ -1,4 +1,4 @@
-﻿using System.Runtime.InteropServices.Marshalling;
+using System.Runtime.InteropServices.Marshalling;
 
 namespace MathUtils
 {
@@ -18,13 +18,13 @@ namespace MathUtils
             return total;
         }
 
-        
+
         public static bool IsPrime(int n)
         {
             bool prime = false;
             double num2 = n - 1;
 
-            double numFact = MathsTools.factoral(num2);
+            double numFact = Factorial(Convert.ToInt32(num2));
             double num3 = numFact + 1;
 
             if (num3 % n == 0)
@@ -37,7 +37,7 @@ namespace MathUtils
 
         public static string IsEven(int n)
         {
-            if (n%2 == 0)
+            if (n % 2 == 0)
             {
                 return "Number is even";
             }
@@ -50,13 +50,13 @@ namespace MathUtils
 
             for (int i = 1; i < exp; i++)
             {
-                result*= baseNum;
+                result *= baseNum;
             }
             if (exp == 0)
             {
                 result = 1;
             }
-             
+
             return result;
         }
 
@@ -70,7 +70,7 @@ namespace MathUtils
         {
             bool divisible = false;
 
-            if (n %  divisor == 0)
+            if (n % divisor == 0)
             {
                 divisible = true;
             }
@@ -80,10 +80,10 @@ namespace MathUtils
 
         public static double DegsToRads(double degs)
         {
-            double rads = (degs/360)*2*(Math.PI);
+            double rads = (degs / 360) * 2 * (Math.PI);
 
-            return rads; 
-    
+            return rads;
+
         }
 
         public static double DegSin(double x)
@@ -96,17 +96,17 @@ namespace MathUtils
 
             for (int i = 3; i < 70; i += 4)
             {
-                sinx -= ((MathsUtil.Power(x, i)) / (MathsUtil.Factorial(i)));
-                sinx += ((MathsUtil.Power(x, i + 2)) / (MathsUtil.Factorial(i + 2)));
+                sinx -= ((MathsUtil.Power(Convert.ToInt32(x), i)) / (MathsUtil.Factorial(i)));
+                sinx += ((MathsUtil.Power(Convert.ToInt32(x), i + 2)) / (MathsUtil.Factorial(i + 2)));
             }
 
             return Math.Round(sinx, 3);
-    
+
         }
 
         public static double nCr(double n, double r)
         {
-            double nCr = (MathsUtil.Factorial(n))/ ((MathsUtil.Factorial(n - r))*MathsUtil.Factorial(r));
+            double nCr = (MathsUtil.Factorial(Convert.ToInt32(n))) / ((MathsUtil.Factorial(Convert.ToInt32(n) - Convert.ToInt32(r))) * MathsUtil.Factorial(Convert.ToInt32(r)));
             return nCr;
         }
 
