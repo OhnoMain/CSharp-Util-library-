@@ -46,4 +46,4 @@ MathsUtil.DegCos(180);
 <h3>👇If you want to see anything else added or have any questions Dm me👇</h3>
 <h2>🟦 DISCORD</h2>
 <p>https://discord.com/users/1486806826946134239</p>
-<p>Add buy me a coffee link (note to self)</p>
+<p>Add buy me a coffee link (note to self) </p>
